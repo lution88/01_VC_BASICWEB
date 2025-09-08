@@ -1,0 +1,261 @@
+/* AI SNS 마케팅 서비스 랜딩 페이지 - 프로젝트 컬러 팔레트 적용 */
+:root {
+  --primary: #242D40;    /* 메인 다크 */
+  --accent: #F2C84B;     /* 포인트 옐로우 */
+  --gold-mid: #A67B2D;   /* 미디엄 골드 */
+  --brown: #594218;      /* 다크 브라운 */
+  --gold-light: #F2B950; /* 라이트 골드 */
+}
+
+/* 전체 페이지 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: var(--primary);
+}
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--brown) 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* CTA 버튼 (Accent 컬러 사용) */
+.cta-button {
+    background-color: var(--accent);
+    color: var(--primary);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* 서비스 소개 카드들 */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(36, 45, 64, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 4px solid var(--gold-mid);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    color: var(--gold-mid);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    line-height: 1.8;
+    color: var(--primary);
+}
+
+/* AI 기능 섹션 */
+.features {
+    background-color: var(--primary);
+    color: white;
+    padding: 80px 20px;
+    margin: 60px 0;
+    border-radius: 20px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--accent);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.feature-item h4 {
+    color: var(--gold-light);
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+/* 가격 비교 섹션 */
+.pricing {
+    margin: 60px 0;
+}
+
+.pricing h2 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.pricing-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.pricing-card.competitor {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+}
+
+.pricing-card.formi {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--gold-light) 100%);
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+/* 푸터 */
+.footer {
+    background-color: var(--brown);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer h3 {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+/* 반응형 디자인 - 모바일 퍼스트 */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    
+    .hero p {
+        font-size: 1.1em;
+    }
+    
+    .services {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-comparison {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pricing-card.formi {
+        transform: none;
+    }
+    
+    .features h2 {
+        font-size: 2em;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.8em;
+    }
+    
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card, .feature-item, .pricing-card {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* 호버 효과 및 마이크로 인터렉션 */
+.service-card:hover h3 {
+    color: var(--accent);
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+

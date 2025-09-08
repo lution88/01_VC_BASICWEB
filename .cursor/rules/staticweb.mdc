@@ -1,0 +1,77 @@
+---
+alwaysApply: true
+---
+# Project Rules
+
+# AI SNS 마케팅 서비스 랜딩 페이지
+
+## 🎯 프로젝트 목표
+AI 기반 SNS 마케팅 회사의 원페이지 홍보 사이트
+
+## 프로젝트 개요
+- **목적**: 포미서비스 AI SNS 마케팅 서비스 홍보 및 상담 신청을 위한 단일 페이지 웹사이트
+- **배포**: GitHub Pages 또는 정적 호스팅
+- **구조**: 단순한 단일 폴더 구조
+
+** 중요 사항 **
+- Git 관리 규칙
+    - **Git 명령어는 Github mcp 를 사용해서 수행합니다**
+- 테스트 규칙
+    - **puppeteer mcp를 사용해서 브라우저 상에서 다양한 테스트를 수행합니다**
+
+## 🛠 기술 스택
+- HTML5
+- CSS3(styles.css)
+- Vanilla JavaScript(script.js)
+- 반응형 디자인 (모바일 퍼스트)
+- Tailwind.css 사용
+
+## 🎨 컬러 팔레트
+```css
+:root {
+  --primary: #242D40;    /* 메인 다크 */
+  --accent: #F2C84B;     /* 포인트 옐로우 */
+  --gold-mid: #A67B2D;   /* 미디엄 골드 */
+  --brown: #594218;      /* 다크 브라운 */
+  --gold-light: #F2B950; /* 라이트 골드 */
+}
+```
+
+## 📄 페이지 구조
+1. **Hero Section** - 메인 타이틀, 서브 타이틀, CTA
+2. **About/Services Introduction** - 3가지 핵심 장점 카드
+3. **Features** - AI 기능 4가지 소개
+4. **Pricing** - 기존 업체 vs 포미서비스 비교
+5. **Process** - 4단계 프로세스 설명
+6. **Testimonials** - 고객 후기 
+7. **Contact** - 연락처 + 최종 상담신청 유도
+8. **Footer** - 회사정보 및 링크
+
+## 🎯 디자인 원칙
+- **Primary (#242D40)**: 메인텍스트, 헤더
+- **Accent (#F2C84B)**: CTA버튼, 하이라이트
+- **Gold (#A67B2D)**: 서브헤딩, 아이콘
+- **Brown (#594218)**: 푸터, 보조텍스트
+
+- **애니메이션**:
+    - Fade-in, Slide-up 효과
+    - 호버 효과 및 마이크로 인터렉션
+
+## 📱 반응형 브레이크포인트
+- Mobile: ~768px
+- Tablet: 769px - 1024px  
+- Desktop: 1025px+
+
+## ✅ 필수 기능
+- 부드러운 스크롤 네비게이션
+- 모바일 메뉴 토글
+- 연락처 폼 검증
+- 이미지 최적화
+- SEO 메타태그
+
+## 개발 규칙
+- 프레임워크나 빌드 도구 사용 금지
+- 모든 코드는 각각의 파일에 포함 (HTML, CSS, JS 분리)
+- ES6+ 문법 사용 가능
+- 반응형 디자인 필수
+
